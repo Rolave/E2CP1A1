@@ -11,20 +11,78 @@
       margin: 0;
       padding: 0;
     }
+    .header {
+      background-color: #f5f5f5;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+    }
+    .header h1 {
+      color: black;
+      text-align: center;
+    }
+    .texto {
+      padding: 70px 30px 0 30px;
+    }
+    .texto p + p {
+      margin-top: 10px;
+    }
+    .boxes {
+      padding: 30px;
+    }
+    .boxes::before, .boxes::after {
+      content: "";
+      display: table;
+    }
+    .boxes::after {
+      clear: both;
+    }
     .box {
-      background-color: gray;
       float: left;
-      height: 100px;
-      margin: 5px;
       padding: 5px;
-      width: calc(25% - 10px);
+      width: 25%;
+    }
+    .box img {
+      display: block;
+      height: auto;
+      margin: 0 auto 10px auto;
+      width: 90%;
     }
   </style>
 </head>
 <body>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
+  <header class="header">
+    <h1>Box Model</h1>
+  </header>
+  <div class="texto">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis leo non viverra tempus. In volutpat commodo tellus sed scelerisque. Duis et sollicitudin ligula. Nullam eget sem nec massa pellentesque cursus. Maecenas et odio non metus finibus suscipit quis ultricies sem. Curabitur et fermentum neque, vel feugiat tortor. Duis nibh erat, ultricies quis sem sit amet, tristique ultrices risus.</p>
+    <p>In hac habitasse platea dictumst. Nam vitae eros elit. Ut sed tempus lacus. Donec vitae nisl ante. Nullam ac nibh enim. Sed ultrices justo at euismod porttitor. Vestibulum commodo imperdiet pulvinar. Fusce placerat, lacus at ultricies dictum, augue tortor efficitur tellus, at iaculis leo augue sed elit. Morbi sollicitudin leo eget congue mattis.</p>
+    <p>Integer at metus quis est bibendum euismod sed ut ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum lacinia ante sodales hendrerit finibus. Integer et sem ut ante semper bibendum nec non erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac pellentesque libero, id ullamcorper mi. Praesent et pharetra tellus, ut posuere quam. Donec libero quam, consequat aliquet porta non, pulvinar ac eros. Integer vel lorem quis nulla vestibulum dignissim nec id nisi. Duis non nulla erat. In justo quam, tincidunt eu fermentum sed, pulvinar nec velit.</p>
+    <p>Duis vel pellentesque turpis, et posuere ex. Nunc porta maximus ante, non auctor dolor posuere at. Curabitur sed urna posuere, aliquam metus eu, faucibus massa. Nullam sed maximus orci. Praesent in dui elit. Nullam mollis nulla eros, sed congue dui mollis non. Sed a rhoncus elit, eget facilisis nisl. Phasellus placerat rhoncus libero vitae porttitor. Pellentesque porttitor varius elementum.</p>
+    <p>Aenean ac sodales diam. Cras vitae scelerisque purus, ut venenatis enim. Proin porta pulvinar sagittis. Integer vitae lectus blandit ex sagittis posuere eu non elit. Aliquam convallis lacus a sapien ultricies porttitor. Pellentesque laoreet et lectus eget cursus. Curabitur euismod iaculis placerat. Nam malesuada dignissim turpis nec fringilla.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis leo non viverra tempus. In volutpat commodo tellus sed scelerisque. Duis et sollicitudin ligula. Nullam eget sem nec massa pellentesque cursus. Maecenas et odio non metus finibus suscipit quis ultricies sem. Curabitur et fermentum neque, vel feugiat tortor. Duis nibh erat, ultricies quis sem sit amet, tristique ultrices risus.</p>
+    <p>In hac habitasse platea dictumst. Nam vitae eros elit. Ut sed tempus lacus. Donec vitae nisl ante. Nullam ac nibh enim. Sed ultrices justo at euismod porttitor. Vestibulum commodo imperdiet pulvinar. Fusce placerat, lacus at ultricies dictum, augue tortor efficitur tellus, at iaculis leo augue sed elit. Morbi sollicitudin leo eget congue mattis.</p>
+    <p>Integer at metus quis est bibendum euismod sed ut ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum lacinia ante sodales hendrerit finibus. Integer et sem ut ante semper bibendum nec non erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac pellentesque libero, id ullamcorper mi. Praesent et pharetra tellus, ut posuere quam. Donec libero quam, consequat aliquet porta non, pulvinar ac eros. Integer vel lorem quis nulla vestibulum dignissim nec id nisi. Duis non nulla erat. In justo quam, tincidunt eu fermentum sed, pulvinar nec velit.</p>
+    <p>Duis vel pellentesque turpis, et posuere ex. Nunc porta maximus ante, non auctor dolor posuere at. Curabitur sed urna posuere, aliquam metus eu, faucibus massa. Nullam sed maximus orci. Praesent in dui elit. Nullam mollis nulla eros, sed congue dui mollis non. Sed a rhoncus elit, eget facilisis nisl. Phasellus placerat rhoncus libero vitae porttitor. Pellentesque porttitor varius elementum.</p>
+    <p>Aenean ac sodales diam. Cras vitae scelerisque purus, ut venenatis enim. Proin porta pulvinar sagittis. Integer vitae lectus blandit ex sagittis posuere eu non elit. Aliquam convallis lacus a sapien ultricies porttitor. Pellentesque laoreet et lectus eget cursus. Curabitur euismod iaculis placerat. Nam malesuada dignissim turpis nec fringilla.</p>
+  </div>
+  <div class="boxes">
+    <div class="box">
+      <img src="../images/logo_desafio_latam.svg" alt="Logo Desafío Latam">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis leo non viverra tempus.</p>
+    </div>
+    <div class="box">
+      <img src="../images/logo_desafio_latam.svg" alt="Logo Desafío Latam">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis leo non viverra tempus.</p>
+    </div>
+    <div class="box">
+      <img src="../images/logo_desafio_latam.svg" alt="Logo Desafío Latam">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis leo non viverra tempus.</p>
+    </div>
+    <div class="box">
+      <img src="../images/logo_desafio_latam.svg" alt="Logo Desafío Latam">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis leo non viverra tempus.</p>
+    </div>
+  </div>
 </body>
 </html>
