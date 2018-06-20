@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Banderas</title>
+  <style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 50px 15px;
+    width: 100%;
+  }
+  .bandera {
+    border: 1px solid gray;
+    height: 250px;
+    margin: 0 auto;
+    max-width: 400px;
+    width 100%:
+  }
+  .bandera + div {
+    margin-top: 20px;
+  }
+  .espana {
+    background-color: yellow;
+    position: relative;
+  }
+  .espana::after, .espana::before  {
+    background-color: red;
+    content: "";
+    display: block;
+    height: 80px;
+  }
+  .espana::after  {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .dinamarca {
+    background-color: red;
+    position: relative;
+  }
+  .dinamarca::after, .dinamarca::before  {
+    background-color: white;
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  .dinamarca::before  {
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .dinamarca::after  {
+    bottom: 0;
+    left: 25%;
+    top: 0;
+    width: 20px;
+  }
+  .emiratos {
+    background-color: white;
+    position: relative;
+  }
+  .emiratos::after, .emiratos::before  {
+    content: "";
+    display: block;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+  }
+  .emiratos::before  {
+    background-color: green;
+    top: 0;
+  }
+  .emiratos::after  {
+    background-color: black;
+    bottom: 0;
+  }
+  .emiratos__red  {
+    background-color: red;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    width: 80px;
+    z-index: 1;
+  }
+  .japon {
+    background-color: white;
+    position: relative;
+  }
+  .japon::before {
+    background-color: red;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 90px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 90px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="bandera espana"></div>
+    <div class="bandera dinamarca"></div>
+    <div class="bandera emiratos">
+      <div class="emiratos__red"></div>
+    </div>
+    <div class="bandera japon"></div>
+  </div>
+</body>
+</html>
