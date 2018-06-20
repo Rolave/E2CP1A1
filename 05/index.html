@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejercicio 05</title>
+  <style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .producto {
+    display: inline-block;
+    padding: 15px;
+  }
+  .producto figure {
+    border: 1px solid gray;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .producto img.ribbon {
+    display: block;
+    height: auto;
+    position: absolute;
+    vertical-align: top;
+    width: 75%;
+  }
+  .producto img {
+    display: block;
+    height: auto;
+    vertical-align: top;
+    width: 100%;
+  }
+  .producto p {
+    color: gray;
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="producto">
+      <figure>
+        <img class="ribbon" src="../images/ribbon.png" alt="">
+        <img src="../images/producto_lente_vr.jpg" alt="Imagen producto">
+      </figure>
+      <p>Lente Vr 7383 4,3" A 6" + Control</p>
+    </div>
+  </section>
+</body>
+</html>
